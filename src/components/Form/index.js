@@ -4,38 +4,53 @@ import DropdownList from '../DropdownList';
 import TextField from '../TextField';
 import { useState } from 'react';
 
-const Form = (props) => {
+const Form = ({onCreate, generos}) => {
 
+    const [rank, setRank] = useState('');
     const [nome, setNome] = useState('');
-    const [cargo, setCargo] = useState('');
+    const [musicaFavorita, setMusicaFavorita] = useState('');
     const [imagem, setImagem] = useState('');
-    const [time, setTime] = useState('');
+    const [genero, setGenero] = useState('');
 
     const onSave = (e) => {
         e.preventDefault();
-        props.onCreate({
-            nome, cargo, imagem, time
+        onCreate({
+            rank, nome, musicaFavorita, imagem, genero
         });
+        setRank('');
+        setNome('');
+        setMusicaFavorita('');
+        setImagem('');
+        setGenero('');
     }
 
     return (
         <section className='section-form'>
             <form onSubmit={onSave}>
-                <h2>Preencha os dados para criar o card do colaborador</h2>
+                <h2>Preencha os dados para criar o card do artista</h2>
+
+                <TextField 
+                    required={true}
+                    label="Posição no rank"
+                    placeholder="Digite a posição do artista no seu rank"
+                    value={rank}
+                    type="number"
+                    min={1}
+                    max={5}
+                    onChange={valor => setRank(Number(valor))} />
 
                 <TextField 
                     required={true}
                     label="Nome"
-                    placeholder="Digite o seu nome"
+                    placeholder="Digite o nome do artista"
                     value={nome}
                     onChange={valor => setNome(valor)} />
 
                 <TextField 
-                    required={true} 
-                    label="Cargo" 
-                    placeholder="Digite o seu cargo"
-                    value={cargo}
-                    onChange={valor => setCargo(valor)} />
+                    label="Música favorita do artista" 
+                    placeholder="Digite a sua música favorita do artista"
+                    value={musicaFavorita}
+                    onChange={valor => setMusicaFavorita(valor)} />
 
                 <TextField 
                     label="Imagem" 
@@ -45,10 +60,10 @@ const Form = (props) => {
 
                 <DropdownList 
                     required={true} 
-                    label="Time" 
-                    itens={props.times}
-                    value={time}
-                    onChange={valor => setTime(valor)} />
+                    label="Gênero" 
+                    itens={generos}
+                    value={genero}
+                    onChange={valor => setGenero(valor)} />
                 
                 <Button>
                     Criar Card

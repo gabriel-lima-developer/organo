@@ -1,0 +1,19 @@
+footer {
+    background-color: #c50000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .redesSociais, footer .logo, footer .copyright {
+    padding: 32px;
+    margin: 0 16px;
+}
+
+footer .redesSociais img {
+    margin: 0 8px;
+}
+
+footer .copyright {
+    color: #FFF;
+}
