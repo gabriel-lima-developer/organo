@@ -6,6 +6,11 @@ Organo é um projeto dinâmico desenvolvido em React que funciona como um organi
 
 Este projeto foi criado como parte de um estudo prático para aprofundar os conhecimentos em React, explorando conceitos como componentes, estado, props, eventos, validação de formulários e manipulação de listas.
 
+## 🚀 Deploy
+
+A aplicação está publicada e pode ser acessada através do link:
+**[https://organo-one-eta.vercel.app/](https://organo-one-eta.vercel.app/)**
+
 ## ✨ Funcionalidades
 
 - **Criação de Cards de Artistas:** Adicione seus artistas favoritos em um ranking pessoal (Top 5).
