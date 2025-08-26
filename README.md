@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# 🎼 Organo - Organizador de Artistas Musicais
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📝 Descrição
 
-## Available Scripts
+Organo é um projeto dinâmico desenvolvido em React que funciona como um organizador de gostos musicais. Com ele, você pode criar "cards" para seus artistas preferidos, informando sua posição em um ranking pessoal, nome, música favorita e imagem. É possível também cadastrar novos gêneros musicais e organizar os artistas nessas categorias, tudo em uma interface limpa e interativa.
 
-In the project directory, you can run:
+Este projeto foi criado como parte de um estudo prático para aprofundar os conhecimentos em React, explorando conceitos como componentes, estado, props, eventos, validação de formulários e manipulação de listas.
 
-### `npm start`
+## ✨ Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Criação de Cards de Artistas:** Adicione seus artistas favoritos em um ranking pessoal (Top 5).
+- **Cadastro de Novos Gêneros:** Crie novas seções de gêneros musicais com nome e cor de destaque personalizados.
+- **Alteração de Cor do Gênero:** Mude a cor de fundo de um gênero existente diretamente pela interface.
+- **Favoritar Artistas:** Marque seus artistas preferidos com um ícone de coração.
+- **Exclusão de Artistas:** Remova cards de artistas que não deseja mais ver na lista.
+- **Organização por Gênero:** Os artistas são automaticamente agrupados sob seus respectivos gêneros.
+- **Design Responsivo:** A aplicação se adapta a diferentes tamanhos de tela para uma melhor experiência do usuário. *(Remova esta linha se não for responsivo)*
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚦 Regras de Validação
 
-### `npm test`
+Para garantir a integridade dos dados, as seguintes regras foram implementadas:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Cadastro de Artista:
+- **Limite de 5 Artistas:** O sistema permite o cadastro de no máximo 5 artistas.
+- **Campos Obrigatórios:** Os campos `Nome`, `Gênero` e `Posição no rank` são de preenchimento obrigatório.
+- **Rank Único:** A `Posição no rank` deve ser única para cada artista, não sendo possível cadastrar dois artistas na mesma posição.
 
-### `npm run build`
+### Cadastro de Gênero:
+- **Campos Obrigatórios:** Para criar um novo gênero, tanto o campo `Nome` quanto o campo `Cor` são obrigatórios.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Tecnologias Utilizadas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Este projeto foi construído com as seguintes tecnologias:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **[React](https://reactjs.org/)**: Biblioteca JavaScript para criar interfaces de usuário.
+- **[JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)**: Linguagem de programação principal.
+- **[CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)**: Para estilização e design da aplicação.
+- **[HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)**: Para a estrutura da página.
 
-### `npm run eject`
+## ⚙️ Como Executar o Projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Para rodar este projeto localmente, siga os passos abaixo:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/gabriel-lima-developer/organo]
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2.  **Acesse o diretório do projeto:**
+    ```bash
+    cd organo
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
 
-## Learn More
+4.  **Inicie a aplicação:**
+    ```bash
+    npm start
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5.  Abra seu navegador e acesse `http://localhost:3000` para ver a aplicação em funcionamento.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 👨‍💻 Autor
 
-### Code Splitting
+Desenvolvido por **Gabriel Lima**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gabriel-lima-211901193/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/gabriel-lima-developer)
