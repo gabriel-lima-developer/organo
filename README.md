@@ -1,46 +1,48 @@
 # 🎼 Organo - Organizador de Artistas Musicais
 
-## 📝 Descrição
+Organo é uma aplicação interativa construída em React que permite aos usuários organizar seus gostos musicais de forma visual e personalizada. Crie cards para seus artistas favoritos, organize-os em gêneros com cores customizáveis e monte seu ranking pessoal.
 
-Organo é um projeto dinâmico desenvolvido em React que funciona como um organizador de gostos musicais. Com ele, você pode criar "cards" para seus artistas preferidos, informando sua posição em um ranking pessoal, nome, música favorita e imagem. É possível também cadastrar novos gêneros musicais e organizar os artistas nessas categorias, tudo em uma interface limpa e interativa.
+<br>
 
-Este projeto foi criado como parte de um estudo prático para aprofundar os conhecimentos em React, explorando conceitos como componentes, estado, props, eventos, validação de formulários e manipulação de listas.
+> **Status:** Projeto Concluído ✅
 
-## 🚀 Deploy
+<br>
 
-A aplicação está publicada e pode ser acessada através do link:
+### 🚀 Deploy
+
+Acesse a aplicação ao vivo através do link:
 **[https://organo-one-eta.vercel.app/](https://organo-one-eta.vercel.app/)**
 
-## ✨ Funcionalidades
+<br>
 
-- **Criação de Cards de Artistas:** Adicione seus artistas favoritos em um ranking pessoal (Top 5).
-- **Cadastro de Novos Gêneros:** Crie novas seções de gêneros musicais com nome e cor de destaque personalizados.
-- **Alteração de Cor do Gênero:** Mude a cor de fundo de um gênero existente diretamente pela interface.
-- **Favoritar Artistas:** Marque seus artistas preferidos com um ícone de coração.
-- **Exclusão de Artistas:** Remova cards de artistas que não deseja mais ver na lista.
-- **Organização por Gênero:** Os artistas são automaticamente agrupados sob seus respectivos gêneros.
-- **Design Responsivo:** A aplicação se adapta a diferentes tamanhos de tela para uma melhor experiência do usuário. *(Remova esta linha se não for responsivo)*
+## ✅ Funcionalidades Principais
 
-## 🚦 Regras de Validação
+-   **➕ Cadastro de Artistas:** Adicione seus artistas a um ranking pessoal (Top 5).
+-   **🎶 Cadastro de Gêneros:** Crie novas categorias de gêneros musicais com nome e cor personalizados.
+-   **🎨 Edição de Cores:** Altere a cor de fundo de um gênero existente de forma interativa.
+-   **❤️ Favoritar Artistas:** Destaque seus artistas preferidos com um simples clique.
+-   **🗑️ Exclusão de Artistas:** Remova facilmente os cards que não deseja mais.
+-   **📱 Design Responsivo:** Interface adaptável para uma ótima experiência em desktops e celulares.
 
-Para garantir a integridade dos dados, as seguintes regras foram implementadas:
+## 🚦 Regras de Negócio e Validações
 
-### Cadastro de Artista:
-- **Limite de 5 Artistas:** O sistema permite o cadastro de no máximo 5 artistas.
-- **Campos Obrigatórios:** Os campos `Nome`, `Gênero` e `Posição no rank` são de preenchimento obrigatório.
-- **Rank Único:** A `Posição no rank` deve ser única para cada artista, não sendo possível cadastrar dois artistas na mesma posição.
+Para garantir a consistência dos dados, o sistema implementa as seguintes regras:
 
-### Cadastro de Gênero:
-- **Campos Obrigatórios:** Para criar um novo gênero, tanto o campo `Nome` quanto o campo `Cor` são obrigatórios.
+#### Cadastro de Artista:
+-   **Limite de 5 Artistas:** O cadastro é restrito a um Top 5.
+-   **Campos Obrigatórios:** `Nome`, `Gênero` e `Posição no rank` são indispensáveis.
+-   **Rank Único:** Não é permitido cadastrar dois artistas na mesma posição do ranking.
 
-## 🚀 Tecnologias Utilizadas
+#### Cadastro de Gênero:
+-   **Campos Obrigatórios:** `Nome` e `Cor` são necessários para criar um novo gênero.
 
-Este projeto foi construído com as seguintes tecnologias:
+## 🛠️ Tecnologias Utilizadas
 
-- **[React](https://reactjs.org/)**: Biblioteca JavaScript para criar interfaces de usuário.
-- **[JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)**: Linguagem de programação principal.
-- **[CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)**: Para estilização e design da aplicação.
-- **[HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)**: Para a estrutura da página.
+-   **React** (Componentes, Estado, Props, Eventos)
+-   **JavaScript (ES6+)**
+-   **CSS3**
+-   **HTML5**
+-   **Vercel** (para deploy)
 
 ## 👨‍💻 Autor
 
