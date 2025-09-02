@@ -42,32 +42,6 @@ Este projeto foi construído com as seguintes tecnologias:
 - **[CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)**: Para estilização e design da aplicação.
 - **[HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)**: Para a estrutura da página.
 
-## ⚙️ Como Executar o Projeto
-
-Para rodar este projeto localmente, siga os passos abaixo:
-
-1.  **Clone o repositório:**
-    ```bash
-    git clone [https://github.com/gabriel-lima-developer/organo]
-    ```
-
-2.  **Acesse o diretório do projeto:**
-    ```bash
-    cd organo
-    ```
-
-3.  **Instale as dependências:**
-    ```bash
-    npm install
-    ```
-
-4.  **Inicie a aplicação:**
-    ```bash
-    npm start
-    ```
-
-5.  Abra seu navegador e acesse `http://localhost:3000` para ver a aplicação em funcionamento.
-
 ## 👨‍💻 Autor
 
 Desenvolvido por **Gabriel Lima**.
